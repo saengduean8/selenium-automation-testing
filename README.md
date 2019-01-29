@@ -10,7 +10,9 @@ What I learned:
 Related Links:
 
 More information on Selenium: https://www.seleniumhq.org/
+
 To download Selenium server zip file and Selenium server standalone jar file: http://selenium-release.storage.googleapis.com/index.html?path=3.141/
+
 To download ChromeDriver: http://chromedriver.storage.googleapis.com/index.html?path=2.45/
 
 
