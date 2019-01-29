@@ -1,10 +1,10 @@
 # selenium-automation-testing
 
-Selenium automation testing using Java.
+Selenium automation testing using Java. 
 
 What I learned:
 - Selenium server and ChromeWebDriver installation
-- Invoke the web browser
+- open the web browser
 - get the page title
 
 Related Links:
