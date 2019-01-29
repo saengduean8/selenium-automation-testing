@@ -1,6 +1,6 @@
 # selenium-automation-testing
 
-Selenium automation testing using Java. 
+Selenium automation testing using Java.
 
 What I learned:
 - Set up the ChromeDriver
