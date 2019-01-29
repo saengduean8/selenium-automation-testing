@@ -3,7 +3,7 @@
 Selenium automation testing using Java. 
 
 What I learned:
-- Set up the ChromeDriver
+- Selenium server and ChromeWebDriver installation
 - Invoke the web browser
 - get the page title
 
