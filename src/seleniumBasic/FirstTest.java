@@ -1,8 +1,6 @@
 package seleniumBasic;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
+import org.openqa.selenium.*;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.interactions.Actions;
 import java.util.concurrent.TimeUnit;
@@ -11,12 +9,15 @@ public class FirstTest {
 
     WebDriver driver;
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws InterruptedException{
 
         FirstTest firstTest = new FirstTest();
         firstTest.invokeBrowser();
         firstTest.getTitle();
         firstTest.hoverMenu();
+        firstTest.scrollDownAndUp();
+        //firstTest.pageUpPageDown();
+
     }
 
     public void invokeBrowser(){
@@ -78,6 +79,38 @@ public class FirstTest {
             e.printStackTrace();
         }
     }
+
+    //scroll down and scroll up by pass parameters as PAGE_DOWN or PAGE_UP to sendKeys()
+    public void scrollDownAndUp() throws InterruptedException{
+
+        Actions actions = new Actions(driver);
+
+        //Scroll down
+        actions.sendKeys(Keys.PAGE_DOWN).build().perform();
+        Thread.sleep(3000);
+
+        //Scroll up
+        actions.sendKeys(Keys.PAGE_UP).build().perform();
+
+    }
+
+    //scroll up and scroll down using JavascriptExecutor
+    public void pageUpPageDown(){
+
+        JavascriptExecutor js = (JavascriptExecutor) driver;
+
+        //scroll down
+        js.executeScript("window.scrollBy(0,-500)", "");
+
+        //scroll up
+        js.executeScript("window.scrollBy(0,500)", "");
+
+        //scroll to the bottom of the web page
+        //js.executeScript("window.scrollBy(0,document.body.scrollHeight)");
+
+    }
+
+
 }
 
 

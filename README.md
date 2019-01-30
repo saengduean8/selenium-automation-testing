@@ -1,11 +1,12 @@
 # selenium-automation-testing
 
-Selenium automation testing using Java. 
+Selenium automation testing using Java.
 
 What I learned:
 - Selenium server and ChromeWebDriver installation
 - open the web browser
 - get the page title
+- Selenium Actions Class API: Keyboard Events and Mouse Events
 
 Related Links:
 
